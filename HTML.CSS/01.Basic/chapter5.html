@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>リンクの状態に合わせてテキスト色を変える | c05-02-a</title>
+<style>
+a {
+	color: #0073bc;
+	text-decoration: none;
+}
+a:link {
+	color: #0073bc;
+}
+a:visited {
+	color: #02314c;
+}
+a:hover {
+	color: #b7dbf2;
+	text-decoration: underline;
+}
+a:active {
+	color: #4ca4e8;
+}
+a[target="_blank"]::after{
+	content: url(opentab.png);
+}
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+thumbnail{
+	width: 100px;
+}
+/*a:hover img{
+	opacity: 0.5;
+}*/
+a:hover .frame {
+	border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+	<p>本書は、アクセス状況からサイトの改善につなげるためのすべての知識を網羅しています。詳しくは<a href="http://www.sbcr.jp" target="_blank">SBクリエイティブ社のWebサイト</a>をご覧ください。</p>
+	<img src="hari.jpeg" width="500" height="500" alt="ハリネズミ" class="img-responsive">
+	<div ckass="thumbnail">
+		<img src="hari2.jpeg" width="400" height="200" alt="ハリネズミ" class="img-responsive" >
+	</div>
+	<a href="http://studio947.net">
+		<img src="hari3.jpg" width="400" height="300" alt="ハリネズミ" class="frame">
+		<p>かわいいハリネズミ</p>
+	</a>
+</body>
+</html>
