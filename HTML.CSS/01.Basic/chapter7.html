@@ -4,17 +4,21 @@
 <meta charset="utf-8">
 <title>基本的なテーブルのマークアップ | c07-01-a</title>
 <style>
-  .hotel {
+.hotel {
     border-collapse: collapse;
     margin: 10px;
   }
-  .hotel th, .hotel td {
+table {
+  border-collapse: collapse;
+}
+.hotel th,
+.hotel td {
     border: 1px solid #8fbac8;
     padding: 8px;
-  }
-  .checkout th,
+}
+.checkout th,
 .checkout td {
-	padding: 8px;
+  padding: 8px;
 }
 .checkout th {
 	font-weight: normal;
@@ -36,7 +40,7 @@
 
 </head>
 <body>
-  <table class=hotel> 　
+  <table class="hotel"> 　
     <tr><th>宿泊施設</th><th>６日</th><th>７日</th><th>８日</th>
   </tr>
   <tr>
@@ -51,25 +55,25 @@
   </table>
 
   <table class="checkout">
-<tr>
-	<th class="item">品名</th>
-	<th class="qty">数量</th>
-	<th class="price">小計（税込）</th>
-</tr>
-<tr>
-	<td class="item">プレゼンテーション レーザーポインター</td>
-	<td class="qty">1</td>
-	<td class="price">&yen;7,560-</td>
-</tr>
-<tr>
-	<td class="item">HDMI 接続ケーブル</td>
-	<td class="qty">1</td>
-	<td class="price">&yen;3,024-</td>
-</tr>
-<tr class="total">
-	<td>合計</td>
-	<td class="price">&yen;10,584-</td>
-</tr>
-</table>
+    <tr>
+    	<th class="item">品名</th>
+    	<th class="qty">数量</th>
+    	<th class="price">小計（税込）</th>
+    </tr>
+    <tr>
+    	<td class="item">プレゼンテーション レーザーポインター</td>
+    	<td class="qty">1</td>
+    	<td class="price">&yen;7,560-</td>
+    </tr>
+    <tr>
+    	<td class="item">HDMI 接続ケーブル</td>
+    	<td class="qty">1</td>
+    	<td class="price">&yen;3,024-</td>
+    </tr>
+    <tr class="total">
+    	<td colspan="2">合計</td>
+    	<td class="price">&yen;10,584-</td>
+    </tr>
+  </table>
 </body>
 </html>
