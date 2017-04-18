@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>偶数行・奇数行で背景色を変える | c07-04-a</title>
 <style>
-table {
+.price table {
 	border-collapse: collapse;
 }
 .price caption {
@@ -21,6 +21,16 @@ table {
 }
 .price tr:nth-child(odd) {
   background-color: #e3ecf5;
+}
+.drive table {
+	border-collapse: collapse;
+}
+.drive caption {
+	text-align: left;
+}
+.drive th, td {
+	border: 1px solid #8fbac8;
+	padding: 8px;
 }
 </style>
 </head>
@@ -49,5 +59,34 @@ table {
 	<td>30帖</td><td>&yen;4,050</td><td>&yen;8,100</td><td>&yen;2,025</td>
 </tr>
 </table>
+
+	<table class="drive">
+	<caption>講習料金</caption>
+	<tr>
+		<td> </td>
+		<th>普通免許MTコース</th>
+		<th>普通免許ATコース</th>
+		<th>二輪免許MTコース</th>
+		<th>二輪免許ATコース</th>
+		<th>ペーパードライバーコース</th>
+	</tr>
+	<tr>
+		<td>はじめての方</td>
+		<td>¥333,000-</td>
+		<td>¥288,000-</td>
+		<td>¥95,000-</td>
+		<td>¥92,000-</td>
+		<td>¥23,000-/1回</td>
+	</tr>
+	<tr>
+		<td>自動二輪免許をお持ちの方</td>
+		<td>¥308,000-</td>
+		<td>¥263,000-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+	</tr>
+	</table>
+
 </body>
 </html>
