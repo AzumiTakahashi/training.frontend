@@ -22,8 +22,15 @@
 .price tr:nth-child(odd) {
   background-color: #e3ecf5;
 }
+.table-wrapper {
+  overflow-x: scroll;
+}
 .drive table {
 	border-collapse: collapse;
+}
+.drive {
+  width: 1000px;
+  margin: 30px 0;
 }
 .drive caption {
 	text-align: left;
@@ -31,6 +38,9 @@
 .drive th, td {
 	border: 1px solid #8fbac8;
 	padding: 8px;
+}
+.drive th {
+  white-space: nowrap;
 }
 </style>
 </head>
@@ -60,6 +70,7 @@
 </tr>
 </table>
 
+<div class="table-wrapper">
 	<table class="drive">
 	<caption>講習料金</caption>
 	<tr>
@@ -87,6 +98,7 @@
 		<td>-</td>
 	</tr>
 	</table>
+  </div>
 
 </body>
 </html>
