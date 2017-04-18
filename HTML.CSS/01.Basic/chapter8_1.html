@@ -3,11 +3,19 @@
 <head>
 <meta charset="utf-8">
 <title>テキストフィールドとフォーム部品の基本的なマークアップ | c08-01-a</title>
+<style>
+.required {
+  padding: 0.5em;
+  font-size: 0.75em;
+  color: #ff0000;
+}
+</style>
 </head>
 <body>
   <form action="#" method="post">
-    <p><label for="name-field">お名前</label><br>
-    <input type="text" name="name" id="name-field"></p>
+    <p><label for="name-field">お名前<span class="required">*必須</span></label>
+      <br>
+    <input type="text" name="name" id="name-field" required></p>
   </form>
 </body>
 </html>
