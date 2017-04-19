@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>パンくずリストを作成する | c06-02-d</title>
+<style>
+.breadcrumb ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.breadcrumb li {
+	display: inline;
+}
+.breadcrumb li::after {
+	content: "»";
+	color: #999;
+}
+.breadcrumb li:last-child::after {
+	content: none;
+}
+.breadcrumb a {
+	text-decoration: none;
+	color: #1864b9;
+}
+</style>
+</head>
+<body>
+<div class="breadcrumb">
+	<ol>
+		<li><a href="/">ホーム</a></li>
+		<li><a href="/products/">製品リスト</a></li>
+		<li><a href="/products/lens/">カメラレンズ</a></li>
+		<li>広角レンズ</li>
+	</ol>
+  <ol>
+    <li><a href="/">ホーム</a></li>
+    <li><a href="/animal">動物</a></li>
+    <li><a href="/animal/mammal">哺乳類</a></li>
+    <li>ハリネズミ</li>
+  </ol>
+</div>
+
+  <div class=spec>
+    <h2>基本仕様</h2>
+    <ul>
+      <li>サイズ：24.5cm × 28.0cm × 32.4cm</li>
+      <li>重量：6.5kg</li>
+    </ul>
+  </div>
+
+  <div class="ad">
+    <img src="koukoku.jpg" alt="アクセス解析ならオートアナライズ">
+  </div>
+  <div class="top3">
+    <h3>売り上げトップ3</h3>
+    <ul>
+      <li>ソウルフードストラップ１０点セット</li>
+      <li>魚眼レンズ付きスマートフォンケース</li>
+      <li>だれでも貼れるガラス保護シート</li>
+    </ul>
+  </div>
+
+</body>
+</html>
