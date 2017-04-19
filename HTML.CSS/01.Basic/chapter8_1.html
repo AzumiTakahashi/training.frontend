@@ -40,7 +40,7 @@ textarea{
   color: #999;
 }
 form {
-  padding: 16px;
+  padding: 10px;
 }
 .label-p {
   margin-bottom: 0;
@@ -54,9 +54,9 @@ form {
   display: inline;
   margin-right: 1em;
 }
-#month #year {
+.pulldown {
   margin: 0;
-  padding: 16px;
+  padding: 0;
 }
 </style>
 </head>
@@ -113,9 +113,8 @@ form {
           <label for="c3">バスがあれば利用</label>
         </li>
       </ul>
-    </form>
-
     <form action="#">
+      <div class="pulldown">
   	<p>
   		<label for="month">有効期限</label><br>
   		<select name="month" id="month">
@@ -143,9 +142,13 @@ form {
   			<option value="2019">2019</option>
   			<option value="2020">2020</option>
   		</select>
-  	</p>
+  	</p></div>
+    <form action="#">
+      <p><input type="submit" name="submit" value="送信する" id="submit"></p>
+    </form>
 </form>
 
+</form>
   </form>
 </body>
 </html>
