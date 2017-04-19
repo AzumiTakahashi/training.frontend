@@ -9,8 +9,8 @@
   font-size: 0.75em;
   color: #ff0000;
 }
-form {
-  padding: 16px;
+.input-group {
+  list-style-type: none;
 }
 input {
   box-sizing: border-box;
@@ -39,7 +39,21 @@ textarea{
   font-size: 16px;
   color: #999;
 }
-
+form {
+  padding: 16px;
+}
+.label-p {
+  margin-bottom: 0;
+}
+.input-group{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.horizontal li{
+  display: inline;
+  margin-right: 1em;
+}
 </style>
 </head>
 <body>
@@ -65,17 +79,17 @@ textarea{
     <form action="#">
       <!-- ラジオボタン -->
       <p class="label-p">時間の設定</p>
-      <ul class="input-group">
+      <ul class="input-group horizontal">
         <li>
           <input type="radio" name="duration" id="r1" value="1" checked>
           <label for="r1">いますぐ出発</label>
         </li>
         <li>
-          <input type="radio" name="duration" id="r2" value="2" checked>
+          <input type="radio" name="duration" id="r2" value="2">
           <label for="r2">出発時刻</label>
         </li>
         <li>
-          <input type="radio" name="duration" id="r3" value="3" checked>
+          <input type="radio" name="duration" id="r3" value="3">
           <label for="r3">到着時刻</label>
         </li>
       </ul>
@@ -91,7 +105,7 @@ textarea{
           <label for="c2">新幹線を優先</label>
         </li>
         <li>
-          <input type="checkbox" name="option" id="c3" value="3" checked>
+          <input type="checkbox" name="option" id="c3" value="3">
           <label for="c3">バスがあれば利用</label>
         </li>
       </ul>
