@@ -1,4 +1,8 @@
 @charset "utf-8";
+* {
+	margin: 0;
+	padding:0;
+}
 
 body {
 	margin: 0;
@@ -8,8 +12,14 @@ body {
 	margin: 0 auto 0 auto;
 	max-width: 1000px;
 }
+section .cobtainer {
+	display: flex;
+	flex-flow: column;
+}
 main {
-	margin-top: 20px;
+	padding: 20px 10px 20px 10px;
+	background: #fffde3;
+	margin-top: 20px ;
 }
 footer {
 	margin-top: 20px;
@@ -42,8 +52,12 @@ footer {
 }
 .footer-inner {
 	background: #bad7f5;
+	padding: 20px 16px 10px 16px;
 }
-
+.sidebar {
+	background-color: #c0f5b9;
+	padding: 20px 10px 20px 10px;
+}
 /* わかりやすくするために適用しているCSS */
 body {
 	color: #444;
@@ -56,4 +70,9 @@ main p:last-child {
 }
 .copyright {
 	margin: 0;
+}
+@media only screen and (min-width: 768px){
+	section .container {
+		flex-flow: row;
+	}
 }
