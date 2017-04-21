@@ -3,30 +3,22 @@
 	margin: 0;
 	padding:0;
 }
+@charset "utf-8";
 
 body {
 	margin: 0;
 }
 .container {
-	padding: 0 16px 0 16px;
 	margin: 0 auto 0 auto;
 	max-width: 1000px;
 }
-section .cobtainer {
+section .container {
 	display: flex;
 	flex-flow: column;
 }
-main {
-	padding: 20px 10px 20px 10px;
-	background: #fffde3;
-	margin-top: 20px ;
-}
-footer {
-	margin-top: 20px;
-}
+
 /*
 各パートにパディング、背景、テキスト色などを指定する
-<div class="container">の子要素に指定する
 */
 .header-inner {
 	padding: 10px 10px 0 10px;
@@ -37,7 +29,7 @@ footer {
 	color: #fff;
 	background: #0086f9;
 }
-.main-inner {
+main {
 	padding: 20px 10px 20px 10px;
 	background: #fffde3;
 
@@ -47,17 +39,27 @@ footer {
 	*/
 	height: 400px;
 }
-.sidebar-inner {
+.sidebar {
+	padding: 20px 10px 20px 10px;
 	background: #c0f5b9;
 }
 .footer-inner {
-	background: #bad7f5;
 	padding: 20px 16px 10px 16px;
+	background: #bad7f5;
 }
-.sidebar {
-	background-color: #c0f5b9;
-	padding: 20px 10px 20px 10px;
+
+@media only screen and (min-width: 768px) {
+	section .container {
+		flex-flow: row;
+	}
+	main {
+		flex: 1 1 auto;
+	}
+	.sidebar {
+		flex: 0 0 340px;
+	}
 }
+
 /* わかりやすくするために適用しているCSS */
 body {
 	color: #444;
@@ -70,9 +72,4 @@ main p:last-child {
 }
 .copyright {
 	margin: 0;
-}
-@media only screen and (min-width: 768px){
-	section .container {
-		flex-flow: row;
-	}
 }
