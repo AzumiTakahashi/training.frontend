@@ -16,7 +16,6 @@ section .container {
 	display: flex;
 	flex-flow: column;
 }
-
 /*
 各パートにパディング、背景、テキスト色などを指定する
 */
@@ -54,9 +53,11 @@ main {
 	}
 	main {
 		flex: 1 1 auto;
+		order: 2;
 	}
 	.sidebar {
 		flex: 0 0 340px;
+		order: 1;
 	}
 }
 
