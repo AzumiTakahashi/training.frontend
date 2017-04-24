@@ -1,0 +1,26 @@
+@charset "uft-8";
+
+
+
+li {
+  list-style-type: none;
+}
+.section-header {
+  padding: 170px 30px 80px;
+}
+.subtitle {
+  margin: 0 0 30px;
+  font-size:
+}
+.section-about {
+  padding: 80px 30px;
+}
+.section-works {
+  padding: 80px 0;
+}
+.section-skills {
+  padding: 80px 0;
+}
+.section-contact {
+  padding: 80px 0 150px;
+}
