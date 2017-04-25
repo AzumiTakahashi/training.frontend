@@ -17,7 +17,7 @@ h1 {
 }
 .site-info {
   margin-bottom: 50px;
-  color:#888;
+  color:#888888;
   font-size:1.6rem;
 }
 .button-list .common-button{
@@ -29,7 +29,7 @@ h1 {
   padding: 20px;
   border-radius: 4px;
   background-color: #afa58d;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 1.2rem;
   text-decoration: none;
   letter-spacing: 1px;
@@ -39,7 +39,18 @@ h1 {
 }
 .section-about {
   padding: 80px 30px;
-  color: #000;
+  color: #333333;
+}
+h2 {
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+.about-text {
+  margin: 30px 0;
+  line-height: 2.5;
 }
 .section-works {
   padding: 80px 0;
@@ -47,7 +58,7 @@ h1 {
 }
 .section-skills {
   padding: 80px 0;
-  color: #000
+  color: #000000;
 }
 .section-contact {
   padding: 80px 0 150px;
