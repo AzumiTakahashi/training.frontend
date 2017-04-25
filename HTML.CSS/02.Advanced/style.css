@@ -9,23 +9,25 @@ body {
   background: #fff;
   text-align: center;
   font-size: 1.4rem;
-  font-family: Raleway,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+  font-family: Raleway,　"Hiragino Kaku Gothic ProN",　Meiryo,　sans-serif;
 }
 
 li {
   list-style-type: none;
+  display: inline-block;
 }
-.section-header {
+.site-header {
   padding: 170px 30px 80px;
   background: #000;
 }
-.subtitle {
+.sub-title {
   margin: 0 0 30px;
   font-size: 2.2rem;
 }
 h1 {
   margin: 50px 0 40px;
   font-size: 7.6rem;
+
 }
 .site-info {
   margin-bottom: 50px;
@@ -33,7 +35,20 @@ h1 {
   font-size:1.6rem;
 }
 .button-list .common-button{
-  margin-top: 10px;
+  margin: 10px;
+}
+ .common-button {
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #afa58d;
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.primary {
+  background-color: #D29E04
 }
 .section-about {
   padding: 80px 30px;
@@ -45,6 +60,7 @@ h1 {
 }
 .section-skills {
   padding: 80px 0;
+  color: #000
 }
 .section-contact {
   padding: 80px 0 150px;
