@@ -56,6 +56,23 @@ h2 {
   padding: 80px 0;
   background: #383634;
 }
+.works-item {
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+
+}
+.works-box {
+  position: relative;
+}
+.work-text {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+.work-image {
+  display: block;
+  width: 100%;
+}
 .section-skills {
   padding: 80px 0;
   color: #000000;
