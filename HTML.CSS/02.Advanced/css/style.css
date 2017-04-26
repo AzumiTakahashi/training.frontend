@@ -26,10 +26,9 @@
     margin: 10px auto;
   }
 }
-h1 {
+.site-header h1 {
   margin: 50px 0 40px;
   font-size: 7.6rem;
-
 }
 .site-info {
   margin-bottom: 50px;
@@ -57,12 +56,24 @@ h1 {
   padding: 80px 30px;
   color: #333333;
 }
-h2 {
+.section-header h2 {
+  position: relative;
   display: inline-block;
   margin: 30px 0 15px;
   padding-bottom: 15px;
   letter-spacing: 2px;
   font-size: 4rem;
+}
+.section-title::before,.section-title::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999999;
+}
+.section-title::before{
+  bottom: 5px;
 }
 .about-text {
   margin: 30px 0;
