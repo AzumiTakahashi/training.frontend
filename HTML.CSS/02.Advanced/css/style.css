@@ -81,32 +81,47 @@
 }
 .section-works {
   padding: 80px 0;
-  background: #383634;
-}
-.background-image {
-  position: relative;
-  transform: scaleY(-1);
-  opacity: 0.2;
-}
-.work-text-tree p common-button{
-  position: absolute;
-  background-color:
+  background-color: #383634;
 }
 .works-item {
+  display: table;
   width: 100%;
   margin-top: 60px;
-
+  table-layout: fixed;
 }
 .works-box {
+  display: table-cell;
   position: relative;
 }
-.work-text {
-  font-size: 1.2rem;
-  line-height: 2;
+.works-box::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 50%;
+  background-size: 100% 100%;
+  opacity: 0.2;
+  transform: scaleY(-1);
 }
-.work-image {
+.works-box::after {
+  background-image: url("image/tree.jpg");
+}
+.works-image {
   display: block;
   width: 100%;
+  margin: 0 0 60%;
+}
+.works-box:nth-child(odd) .works-image{
+  margin: 60% 0 0;
+}
+.works-discription {
+  display: table;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  position: absolute;
 }
 .section-skills {
   padding: 80px 0;
