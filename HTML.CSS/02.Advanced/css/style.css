@@ -1,8 +1,10 @@
 @charset "uft-8";
-
+body{
+  background: #151515;
+  background-image: url("../images/bg.png") no-repeat fixed left bottom;
+}
 .site-header {
   padding: 170px 30px 80px;
-  background: #000000;
 }
 .sub-title {
   margin: 0 0 30px;
@@ -55,6 +57,7 @@
 .section-about {
   padding: 80px 30px;
   color: #333333;
+  background-color: #FFFFFF;
 }
 .section-header h2 {
   position: relative;
@@ -148,7 +151,6 @@
   vertical-align: middle;
   font-size: 1.2rem;
   line-height: 2;
-  overflow-y: auto;
 }
 .works-text > .common-button {
   width: 60%;
@@ -161,6 +163,7 @@
 }
 .section-skills {
   padding: 80px 0;
+  background-color: #FFFFFF;
   color: #000000;
 }
 .section-contact {
