@@ -104,14 +104,16 @@
   opacity: 0.2;
   transform: scaleY(-1);
 }
-.works1 {
+.works1::after {
   background-image: url("../image/tree.jpg");
+  top: 0%;
 }
 .works2::after {
   background-image: url("../image/building.jpg");
 }
-.works3 {
+.works3::after {
   background-image: url("../image/lake.jpg");
+  top: 0%;
 }
 .works4::after {
   background-image: url("../image/sky.jpg");
@@ -124,22 +126,29 @@
 .works-box:nth-child(odd) .works-image{
   margin: 60% 0 0;
 }
-.works-description {
-  display: table;
+.works-description-wrapper {
+  position: absolute;
   top: 50%;
   left: 0;
   width: 100%;
   height: 50%;
-  position: absolute;
   z-index: 1;
+  overflow-y: auto;
 }
-.works-box:nth-child(odd) .works-description {
+.works-description {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.works-box:nth-child(odd) .works-description-wrapper {
   top: 0;
 }
 .works-text {
   vertical-align: middle;
   font-size: 1.2rem;
   line-height: 2;
+  overflow-y: auto;
 }
 .works-text > .common-button {
   width: 60%;
