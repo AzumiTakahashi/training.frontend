@@ -24,3 +24,12 @@ li {
 img {
   border: 0;
 }
+input {
+  line-height: normal;
+  font: inherit;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
