@@ -1,6 +1,5 @@
 @charset "uft-8";
 body{
-  background: #151515;
   background: url(/image/bg.png) no-repeat fixed left bottom;
   background-size: cover;
 }
@@ -22,14 +21,7 @@ body{
   background-color: #FFFFFF;
   vertical-align: middle;
 }
-@media screen and (max-width: 768px){
-  .sub-title::before,.sub-title::after{
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-  }
-}
-.site-header h1 {
+.site-title {
   margin: 50px 0 40px;
   font-size: 7.6rem;
 }
@@ -63,7 +55,7 @@ body{
   color: #333333;
   background-color: #FFFFFF;
 }
-.section-header h2 {
+.section-header {
   position: relative;
   display: inline-block;
   margin: 30px 0 15px;
@@ -252,4 +244,34 @@ body{
 }
 .footer > small{
   font-size: 1.3rem;
+}
+@media only screen and (max-width: 768px){
+  body{
+    font-size: 1.3rem;
+  }
+  .sub-title::before,.sub-title::after{
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .sub-title {
+    font-size: 1.7rem;
+  }
+  .site-title {
+    margin-top: 35px;
+    font-size: 5rem;
+  }
+  .section-title {
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
+  .about-text {
+    line-height: 1.8;
+  }
+}
+@media only screen and (max-width: 1024px){
+  body{
+    background: #151515;
+    background-image: none;
+  }
 }
