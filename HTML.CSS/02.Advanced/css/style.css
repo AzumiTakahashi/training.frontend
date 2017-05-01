@@ -249,6 +249,9 @@ body{
   body{
     font-size: 1.3rem;
   }
+  .site-header {
+    padding-top: 60px;
+  }
   .sub-title::before,.sub-title::after{
     display: block;
     width: 80%;
@@ -281,6 +284,24 @@ body{
     top: 0;
     height: 100%;
     background-size: cover;
+  }
+  .skills-item .skills-box {
+    display: block;
+  }
+  .skills-box {
+    margin: 40px auto;
+  }
+  .skills-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    line-height: 92px;
+  }
+  .section-contact {
+    padding-bottom: 80px;
+  }
+  .contact-form {
+    width: 80%
   }
 }
 @media only screen and (max-width: 1024px){
