@@ -367,6 +367,8 @@ BODY
 }
 .curriculumdetail-list > li > a {
 	display: block;
+}
+.left2-grid {
 	padding: 15px;
 }
 .item-post:hover {
