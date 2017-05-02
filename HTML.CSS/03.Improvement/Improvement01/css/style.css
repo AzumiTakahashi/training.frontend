@@ -70,7 +70,7 @@ COMMON
 }
 .sns > .mifb {
 	float: left;
-} 
+}
 .sns > .mitw {
 	padding-top: 1px;
 	padding-left: 10px;
@@ -369,8 +369,7 @@ BODY
 	display: block;
 	padding: 15px;
 }
-.curriculumdetail-list > li > .curriculumdetail-link:hover,
-.curriculumdetail-list > li > .curriculumdetail-link:hover .item-post {
+.item-post:hover {
 	opacity: 0.6;
 	filter: alpha(opacity=60);
 	-ms-filter: "alpha(opacity=60)";
@@ -595,7 +594,7 @@ BODY
 		min-height: 273px;
 	}
 	.kv-text .kv-text-img {
-		max-width: 100%;	
+		max-width: 100%;
 	}
 	.kv-link > a {
 		position: absolute;
