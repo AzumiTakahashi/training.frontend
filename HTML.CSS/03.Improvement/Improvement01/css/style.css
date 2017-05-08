@@ -369,6 +369,9 @@ BODY
 	display: block;
 	padding: 15px;
 }
+.curriculumdetail-list > li {
+	padding: 15px;
+}
 .item-post:hover {
 	opacity: 0.6;
 	filter: alpha(opacity=60);
