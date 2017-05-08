@@ -367,11 +367,10 @@ BODY
 }
 .curriculumdetail-list > li > a {
 	display: block;
-}
-.left2-grid {
 	padding: 15px;
 }
-.item-post:hover {
+.curriculumdetail-list > li > .curriculumdetail-link:hover,
+.curriculumdetail-list > li > .curriculumdetail-link:hover .item-post {
 	opacity: 0.6;
 	filter: alpha(opacity=60);
 	-ms-filter: "alpha(opacity=60)";
