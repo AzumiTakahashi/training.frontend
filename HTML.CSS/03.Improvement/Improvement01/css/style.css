@@ -369,8 +369,7 @@ BODY
 	display: block;
 	padding: 15px;
 }
-.curriculumdetail-list > li > .curriculumdetail-link:hover,
-.curriculumdetail-list > li > .curriculumdetail-link:hover .item-post {
+.item-post:hover {
 	opacity: 0.6;
 	filter: alpha(opacity=60);
 	-ms-filter: "alpha(opacity=60)";
@@ -686,12 +685,6 @@ BODY
 	}
 	.curriculumdetail-item > dd {
 		line-height: 1.5;
-	}
-	.curriculumdetail-list > li > .curriculumdetail-link:hover,
-	.curriculumdetail-list > li > .curriculumdetail-link:hover .item-post {
-		opacity: 1;
-		filter: alpha(opacity=100);
-		-ms-filter: "alpha(opacity=100)";
 	}
 	.course-list > li > a:hover,
 	.course-list > li > a:hover .item-post{
