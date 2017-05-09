@@ -70,6 +70,10 @@
 	right: -19px;
 	z-index: 5;
 }
+.newmark-image {
+	width: 75px;
+	height: 74px;
+}
 #top_news a:hover {
 	opacity: 0.8;
 }
