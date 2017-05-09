@@ -76,6 +76,10 @@
 .detail-underline {
 	text-decoration: underline;
 }
+#top_news > img {
+	width: 135px;
+	height: 50px;
+}
 /*=========== top_semiorder ===========*/
 #top_semiorder {
 	width: 100%;
