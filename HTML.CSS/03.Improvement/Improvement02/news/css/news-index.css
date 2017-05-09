@@ -2,7 +2,7 @@
 /*=========== top_main ===========*/
 #top_main {
 	width: 100%;
-	max-width: 1500px;
+	max-width: 1341px;
 	min-width: 1000px;
 	margin-top: 177px;
 }
@@ -25,13 +25,15 @@
 	margin: 0 auto;
 }
 #top_news .list-outer {
-	width: 1000px;
+	width: 1341px;
 	margin: 0 auto;
 	padding-bottom: 110px;
 }
 #top_news ul {
 	margin-top: -120px;
 	margin-right: -27px;
+	display: flex;
+	flex-wrap: wrap;
 }
 #top_news ul li {
 	display: block;
